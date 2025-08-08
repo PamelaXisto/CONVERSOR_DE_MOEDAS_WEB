@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('/static/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100vh; 
+    margin: 2;
+    padding: 0;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    text-shadow:
+        0 0 5px rgb(250, 255, 95),
+        0 0 10px rgb(250, 255, 95),
+        0 0 20px rgb(250, 255, 95),
+        0 0 40px rgb(250, 255, 95),
+        0 0 80px rgb(250, 255, 95);
+}
+
+.cardText{
+    color:rgb(0, 0, 0);
+    align-items: center;
+}
+
+.cards{
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 30px auto;
+    box-shadow: 0 0 15px rgba(204, 255, 0, 0.5);
+}
+
+.cards input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+}
+
+.Button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.Button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgb(250, 255, 95), 0 0 20px rgb(250, 255, 95);
+}
+
+.ButtonText {
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.resultadoTexto {
+    font-weight: bold;          
+    text-align: center;         
+    font-size: 24px;           
+    color: black;  
+    background-color: #ffffff;           
+    margin-top: 20px;   
+}

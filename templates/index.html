@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <h1>Conversor de Moedas</h1>
+    <form method="POST" class="cards">
+        <label class="cardText">Valor:</label>
+        <input type="text" name="valor" required />
+        <br />
+        <label class="cardText">Moeda de Origem:</label>
+        <input type="text" name="moeda_origem" maxlength="3" required />
+        <br />
+        <label class="cardText">Moeda de Destino:</label>
+        <input type="text" name="moeda_destino" maxlength="3" required />
+        <br />
+        <button type="submit" class="Button"><span class="ButtonText">Converter</span></button>
+    </form>
+
+
+    {% if resultado %}
+        <h2 class="resultadoTexto">Resultado:</h2>
+        <p class="resultadoTexto">{{ resultado }}</p>
+    {% endif %}
+
+    {% if erro %}
+        <p style="color:red;">{{ erro }}</p>
+    {% endif %}
+</body>
+</html>
